@@ -13,8 +13,12 @@ body {
   font-size: 1.2em;
 }
 
+.mainfooter {
+  border: dashed 4px #3a3535;
+}
+
 .description {
-  padding: 5%;
+  padding: 0 5%;
   text-align: justify;
 }
 
@@ -40,7 +44,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: form;
-  width: 95%;
+  width: 90%;
   margin: 20px auto;
   border-radius: 20px;
   background-color: #f4f4f4;
