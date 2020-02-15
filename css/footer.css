@@ -126,6 +126,7 @@ body {
 
 .contact-info .news h3 {
   margin: 5px;
+  font-size: small;
 }
 
 .contact-info .news .news__box {
@@ -170,6 +171,7 @@ body {
 
 .contact-info .info h3 {
   margin: 5px;
+  font-size: small;
 }
 
 .contact-info .info p {
@@ -244,6 +246,12 @@ body {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: news;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=footer.css.map */
