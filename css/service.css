@@ -39,7 +39,12 @@ body .system .compte {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "a b" "c d" "e f" "g h" "i j" "k l";
+  grid-template-areas: "a b"
+ "c d"
+ "e f"
+ "g h"
+ "i j"
+ "k l";
 }
 
 body .system .appl, body .system .item2, body .system .item3, body .system .item5, body .system .item7, body .system .item9, body .system .item11 {
