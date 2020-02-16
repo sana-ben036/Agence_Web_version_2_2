@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -201,3 +202,4 @@ body .system .item12 {
     grid-row: 11/12;
   }
 }
+/*# sourceMappingURL=service.css.map */
