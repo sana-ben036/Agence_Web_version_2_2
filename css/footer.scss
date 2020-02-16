@@ -89,6 +89,8 @@ body {
     }
 }
 
+/*----------------------------------------le code de  footer--------------------------------------------------------*/
+
 .contact-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,6 +183,9 @@ body {
 
 }
 
+/*----------------------------------------le code fin de  footer--------------------------------------------------------*/
+
+
 
 @media screen and (max-width: 768px){
 
@@ -196,7 +201,8 @@ body {
         .form{grid-area: form;}
     }
 
-    
+    /*----------------------------------------le code responsive tablette  de  footer--------------------------------------------------------*/
+
     .contact-info {
         display: grid;
         text-align: center;
@@ -208,6 +214,7 @@ body {
        .news{grid-area: news;}
     }               
    
+    /*----------------------------------------fin  code responsive tablette de  footer--------------------------------------------------------*/
 
 }
 @media screen and (max-width: 360px){

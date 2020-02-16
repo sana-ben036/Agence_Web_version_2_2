@@ -108,7 +108,7 @@
   @media screen and (max-width: 480px) {
   .logo{
       width: 30%;
-      height: : 10%;
+      height: 10%;
       margin: 3%;
   }
   nav{
@@ -117,8 +117,8 @@
     width: 100%;
   }
   ul{
-    width: 64%
+    width: 64%;
     margin-left: 26%;
     top:80px;
   }
-  }
+}
