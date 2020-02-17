@@ -21,8 +21,7 @@ body {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
     grid-template-rows: 20% 10% 15% 15% 12% 8%;
-    grid-template-areas:
-        "page__txt1 page__txt1 page__txt1"
+    grid-template-areas: "page__txt1 page__txt1 page__txt1"
         "page__txt2 page__title2 ."
         "page__txt2 page__txt3 page__txt3"
         "page__txt2 page__txt4 page__txt4"
@@ -44,9 +43,9 @@ body {
     grid-area: page__txt2;
     align-self: center;
     justify-self: end;
-    padding-right: 4%;
-    font-size: 2rem;
-    line-height: 4rem;
+    padding-right: 6%;
+    font-size: 1.8em;
+    line-height: 2em;
 }
 
 .page__title2 {
@@ -89,8 +88,8 @@ body {
 .our__title2 {
     grid-area: our__title2;
     align-self: center;
-    padding-left: 6%;
-    line-height: 2.5rem;
+    padding-left: 4%;
+    line-height: 2.5em;
 }
 
 .our_title {
@@ -124,6 +123,7 @@ span {
 .achievement {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 25% 50% 60%;

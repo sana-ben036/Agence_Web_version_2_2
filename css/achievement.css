@@ -12,151 +12,6 @@ body {
   font-size: 1.2em;
 }
 
-/*------------------------------------------------------------------*/
-
-.navbar {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-
-}
-
-nav {
-  background: #f4f4f4;
-  height: auto;
-  width: 100%;
-  padding-right: 3%;
-}
-
-.logo {
-  width: 9%;
-  margin: 4%;
-  margin-top: 1%;
-}
-
-nav ul {
-  float: right;
-  /*  margin-right: 20px;
-*/
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 2% 0;
-
-}
-
-nav ul li a {
-  color: #3F8FB9;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  text-decoration: none;
-
-}
-
-a.active,
-a:hover {
-  background: #FF7315;
-  /*7248AE*/
-  color: white;
-  transition: .5s;
-}
-
-.checkbtn {
-  display: none;
-  font-size: 30px;
-  /*  color: white;
-*/
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  color: #FF7315;
-}
-
-#check {
-  display: none;
-}
-
-@media screen and (max-width: 1000px) {
-
-  .logo {
-    width: 18%;
-    margin: 2% 3%;
-  }
-
-  .checkbtn {
-    display: block;
-  }
-
-  ul {
-    position: fixed;
-    width: 63%;
-    color: rgb(65, 34, 179);
-    margin-left: 127vw;
-    background: #E5E5E5;
-    top: 96px;
-    z-index: 1;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-
-  .active {
-    color: #FF7515;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 30px 0;
-    line-height: 30px;
-
-  }
-
-  nav ul li a {
-    font-size: 20px;
-  }
-
-  a:hover,
-  a.active {
-    background: #FF7315;
-    /*7248AE*/
-    color: white;
-  }
-
-  #check:checked~ul {
-    left: 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .logo {
-    width: 30%;
-    height: 10%;
-    margin: 3%;
-  }
-
-  nav {
-    background-color: #f4f4f4;
-    height: 80px;
-    width: 100%;
-  }
-
-  ul {
-    width: 64%;
-    margin-left: 26%;
-    top: 80px;
-  }
-}
-
-/*-----------------------------------------------------------------------*/
-
 .page__about {
   width: 100%;
   height: 60%;
@@ -165,15 +20,10 @@ a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 1fr 20%;
-  grid-template-columns: 20% 1fr 20%;
+      grid-template-columns: 20% 1fr 20%;
   -ms-grid-rows: 20% 10% 15% 15% 12% 8%;
-  grid-template-rows: 20% 10% 15% 15% 12% 8%;
-  grid-template-areas: "page__txt1 page__txt1 page__txt1"
-    "page__txt2 page__title2 ."
-    "page__txt2 page__txt3 page__txt3"
-    "page__txt2 page__txt4 page__txt4"
-    "page__txt5 page__txt5 our__title2"
-    "page__txt6 page__txt6 our__title2";
+      grid-template-rows: 20% 10% 15% 15% 12% 8%;
+      grid-template-areas: "page__txt1 page__txt1 page__txt1" "page__txt2 page__title2 ." "page__txt2 page__txt3 page__txt3" "page__txt2 page__txt4 page__txt4" "page__txt5 page__txt5 our__title2" "page__txt6 page__txt6 our__title2";
 }
 
 .page__txt1 {
@@ -185,10 +35,10 @@ a:hover {
   padding-left: 8%;
   padding-right: 8%;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .page__txt2 {
@@ -197,13 +47,13 @@ a:hover {
   -ms-grid-column: 1;
   grid-area: page__txt2;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: end;
-  justify-self: end;
-  padding-right: 4%;
-  font-size: 2rem;
-  line-height: 4rem;
+      justify-self: end;
+  padding-right: 6%;
+  font-size: 1.8em;
+  line-height: 2em;
 }
 
 .page__title2 {
@@ -211,8 +61,8 @@ a:hover {
   -ms-grid-column: 2;
   grid-area: page__title2;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .page__title2 h1 {
@@ -225,8 +75,8 @@ a:hover {
   -ms-grid-column-span: 2;
   grid-area: page__txt3;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding-right: 10%;
 }
 
@@ -236,8 +86,8 @@ a:hover {
   -ms-grid-column-span: 2;
   grid-area: page__txt4;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding-right: 10%;
 }
 
@@ -247,8 +97,8 @@ a:hover {
   -ms-grid-column-span: 2;
   grid-area: page__txt5;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding-left: 10%;
 }
 
@@ -258,8 +108,8 @@ a:hover {
   -ms-grid-column-span: 2;
   grid-area: page__txt6;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding-left: 10%;
 }
 
@@ -269,18 +119,18 @@ a:hover {
   -ms-grid-column: 3;
   grid-area: our__title2;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  padding-left: 6%;
-  line-height: 2.5rem;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 4%;
+  line-height: 2.5em;
 }
 
 .our_title {
   width: 100%;
   text-align: center;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .line__1 {
@@ -288,10 +138,10 @@ a:hover {
   height: 4px;
   background-color: black;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .line__2 {
@@ -299,10 +149,10 @@ a:hover {
   height: 4px;
   background-color: black;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 span {
@@ -312,15 +162,14 @@ span {
 .achievement {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 10%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 25% 50% 60%;
-  grid-template-rows: 25% 50% 60%;
-  grid-template-areas: ". our__title3 ."
-    "sec__img1 sec__img2 sec__img3"
-    "sec__img4 sec__img5 sec__img6";
+      grid-template-rows: 25% 50% 60%;
+      grid-template-areas: ". our__title3 ." "sec__img1 sec__img2 sec__img3" "sec__img4 sec__img5 sec__img6";
 }
 
 .our__title3 {
@@ -328,10 +177,10 @@ span {
   -ms-grid-column: 2;
   grid-area: our__title3;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .our__title3 h1 {
@@ -343,10 +192,10 @@ span {
   -ms-grid-column: 1;
   grid-area: sec__img1;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .sec__img2 {
@@ -354,10 +203,10 @@ span {
   -ms-grid-column: 2;
   grid-area: sec__img2;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .sec__img3 {
@@ -365,10 +214,10 @@ span {
   -ms-grid-column: 3;
   grid-area: sec__img3;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .sec__img4 {
@@ -376,10 +225,10 @@ span {
   -ms-grid-column: 1;
   grid-area: sec__img4;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   padding-bottom: 6%;
 }
 
@@ -388,10 +237,10 @@ span {
   -ms-grid-column: 2;
   grid-area: sec__img5;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   padding-bottom: 6%;
 }
 
@@ -400,11 +249,10 @@ span {
   -ms-grid-column: 3;
   grid-area: sec__img6;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   padding-bottom: 6%;
 }
-
 /*# sourceMappingURL=achievement.css.map */
