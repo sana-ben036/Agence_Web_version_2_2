@@ -51,9 +51,9 @@ body {
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
-  padding-right: 4%;
-  font-size: 2rem;
-  line-height: 4rem;
+  padding-right: 6%;
+  font-size: 1.8em;
+  line-height: 2em;
 }
 
 .page__title2 {
@@ -121,8 +121,8 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-left: 6%;
-  line-height: 2.5rem;
+  padding-left: 4%;
+  line-height: 2.5em;
 }
 
 .our_title {
@@ -162,6 +162,7 @@ span {
 .achievement {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 10%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
