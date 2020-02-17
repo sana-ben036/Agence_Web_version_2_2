@@ -33,6 +33,13 @@ body {
 .contact-info .news h3 {
   margin: 5px;
   font-size: small;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.contact-info .news .valid {
+  display: none;
+  margin: 10px auto;
+  padding: 5%;
 }
 
 .contact-info .news .news__box {
@@ -57,6 +64,7 @@ body {
 .contact-info .news .news__box input {
   border: 1px solid #f4f4f4;
   background-color: #3a3535;
+  color: #f4f4f4;
 }
 
 .contact-info .news .news__box button, .contact-info .news .news__box input {
@@ -78,6 +86,7 @@ body {
 .contact-info .info h3 {
   margin: 5px;
   font-size: small;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .contact-info .info p {

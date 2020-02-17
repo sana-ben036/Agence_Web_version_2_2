@@ -99,6 +99,7 @@ body {
 }
 
 .map {
+  width: 90%;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: map;
@@ -110,9 +111,12 @@ body {
   margin-top: 3%;
 }
 
-.contact .contact__address,
-.contact .contact__phone {
-  width: 15px;
+.contact .contact__time {
+  width: 30px;
+}
+
+.contact .contact__mail {
+  width: 20px;
 }
 
 .contact h3,

@@ -84,6 +84,7 @@ body {
 
 }
 .map{
+    width: 90%;
     grid-area: map;
     padding: 5% ;
     margin: 0 auto;
@@ -91,9 +92,11 @@ body {
 }
 .contact{
     margin-top: 3%;
-    .contact__address,
-    .contact__phone {
-        width: 15px;
+    .contact__time {
+        width: 30px;
+    }
+    .contact__mail{
+        width: 20px;
     }
 
     h3,
