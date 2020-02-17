@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    color: #232020;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2em;
+}
+
+.mainfooter{
+    border: dashed 4px #3a3535;
+}
+
+.description{
+    padding: 0 5%;
+    text-align: justify;
+    h1{
+        text-align: center;
+        color: #ff7323;
+        padding: 5%;
+    }
+    span{
+        font-weight: bold;
+    }   
+}
+.map-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "map form";
+}
+
+.form {
+    grid-area: form;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    color: #3a3535;
+    grid-column: 2/3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .form__input {
+        display: block;
+        margin: 4%  auto;
+        width: 90%;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    #textarea {
+        height: 180px;
+        
+    }
+
+    .form__input--submit {
+        background-color: #3a3535;
+        color: #f4f4f4;
+        width: 30%;
+        height: 30px;
+        border: none;
+        box-shadow: 0 5px 6px #3a35358c;
+    }
+
+}
+.map{
+    grid-area: map;
+    padding: 5% ;
+    margin: 0 auto;
+   
+
+}
+.contact{
+    margin-top: 3%;
+    .contact__address,
+    .contact__phone {
+        width: 15px;
+    }
+
+    h3,
+    p {
+        font-size: small;
+    }
+}
+
+/*----------------------------------------le code de  footer--------------------------------------------------------*/
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #232020;
+    color: #f4f4f4;
+
+    .news{
+        width: 70%;
+        grid-column: 2/3;
+        padding: 5%;
+        margin: 0 10%;
+        h3 {
+            margin: 5px;
+            font-size: small
+        }
+        .news__box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;            
+            border: 2px solid #f4f4f4;
+            p{
+                font-size: small;
+                margin: 2%;
+            }
+            input{
+                @extend button;
+                border: 1px solid #f4f4f4;
+                background-color: #3a3535;
+                
+            }
+            button{
+                width: 50%;
+                height: 30px;
+                margin: 2%;
+               
+
+            }
+        }
+        
+    
+
+    }
+
+    .info {
+        width: 70%;
+        grid-column: 1/2;
+        padding: 5%;
+        margin: 0 10%;
+        text-align: justify;
+
+        h3 {
+            margin: 5px;
+            font-size: small
+        }
+        p{
+            font-size: small;
+        }
+
+        .contact {
+            margin-top: 20px;
+
+            .contact__address,
+            .contact__phone {
+                width: 15px;
+            }
+
+            h3,
+            p {
+                font-size: small;
+            }
+        }
+    }
+}
+
+
+
+.media {
+    padding: 1%;
+    background-color: #3a3535;
+    color: #f4f4f4;
+    text-align: center;
+
+    .media__icon {
+        width: 2%;
+    }
+
+    p {
+        font-size: x-small;
+    }
+
+}
+
+/*----------------------------------------le code fin de  footer--------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 768px){
+
+    
+
+    .map-form{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-template-areas: "map" 
+                             "form";
+        .map{grid-area: map;}
+        .form{grid-area: form;}
+    }
+
+    /*----------------------------------------le code responsive tablette  de  footer--------------------------------------------------------*/
+
+    .contact-info {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "info" 
+                             "news";
+       .info{grid-area: info;} 
+       .news{grid-area: news;}
+    }               
+   
+    /*----------------------------------------fin  code responsive tablette de  footer--------------------------------------------------------*/
+
+}
+@media screen and (max-width: 360px){
+    body {
+        font-size: 1em;
+    }
+
+
+}
+
+        
+                             
+    
