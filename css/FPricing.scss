@@ -55,6 +55,13 @@
     margin-right: 5%;
     
   }
+  .ed{
+    color: black;
+    
+    span{
+      font-size: xx-large;
+    }
+  }
   
   .pricingdiv ul.theplan:hover {
     /* when mouse hover over pricing table */
@@ -111,12 +118,13 @@
   }
   
   .testimonials{
+    
     padding: 40px 0;
     background: #f4f4f4;
     color: #434343;
     text-align: center;
    
-    margin-top: -10%;
+    
     width: 100%;
   }
   .inner{
@@ -143,10 +151,12 @@
     max-width: 33.33%;
     box-sizing: border-box;
     padding: 15px;
+    
   }
   .testimonial{
     background: #fff;
     padding: 30px;
+    height: 50vh;
   }
   .testimonial img{
     width: 100px;
@@ -155,7 +165,7 @@
   }
   .name{
     font-size: 20px;
-    text-transform: uppercase;
+   
     margin: 20px 0;
   }
   .stars{

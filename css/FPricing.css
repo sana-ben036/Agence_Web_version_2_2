@@ -53,6 +53,14 @@ body {
   margin-right: 5%;
 }
 
+.ed {
+  color: black;
+}
+
+.ed span {
+  font-size: xx-large;
+}
+
 .pricingdiv ul.theplan:hover {
   /* when mouse hover over pricing table */
   transform: scale(1.05);
@@ -111,7 +119,6 @@ body {
   background: #f4f4f4;
   color: #434343;
   text-align: center;
-  margin-top: -10%;
   width: 100%;
 }
 
@@ -145,6 +152,7 @@ body {
 .testimonial {
   background: #fff;
   padding: 30px;
+  height: 50vh;
 }
 
 .testimonial img {
@@ -155,7 +163,6 @@ body {
 
 .name {
   font-size: 20px;
-  text-transform: uppercase;
   margin: 20px 0;
 }
 
