@@ -150,7 +150,7 @@ body {
 .testimonial {
   background: #fff;
   padding: 30px;
-  height: 50vh;
+  height: 100%;
 }
 
 .testimonial img {
