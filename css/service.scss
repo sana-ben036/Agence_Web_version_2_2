@@ -223,8 +223,14 @@ body {
                         height:2600px;
                         .system__titre {
                             text-align: center;
+                               
                         }
                        .compte {
+                           .para{
+                               h2 {
+                                   font-size: 13px;
+                               }
+                           }
                           
                            display: grid;
                            grid-template-columns: 100%;

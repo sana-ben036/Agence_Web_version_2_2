@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/navp.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/FPricing.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
@@ -13,34 +13,33 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/footer2.css">
-
+    <script src="https://kit.fontawesome.com/55c42bd16e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="allMenuSlide">
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars" aria-hidden="true"></i>
-                </label>
-                <img src="./img/mediaspace.png" class="logo  && animated rubberBand">
+    <div class="header ">
+        <h2 class="logo">MediaSpace</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+        <ul class="menu">
+            <a href="Home.html">Home</a>
+            <a href="achievement.html">About</a>
+            <a href="FPricing.html">Pricing</a>
+            <a href="service.html">Service</a>
+            <a href="team.html">Team</a>
+            <a href="footer.html">Contact us</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="achievement.html">About</a></li>
-                    <li><a class="active" href="#">Pricing</a></li>
-                    <li><a href="service.html">Service</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="footer.html">Contact us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </ul>
+    </div>
     <div class="testimonials">
         <div class="inner">
             <h1>Testimonials</h1>
-            <div class="border"></div>
+           
 
             <div class="row">
                 <div class="col">
@@ -56,8 +55,8 @@
                         </div>
 
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s,
+                            It is with great pleasure that we would like to mention our great satisfaction with the
+                            services you have offered to our company since our first meeting.
                         </p>
                     </div>
                 </div>
@@ -73,10 +72,10 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s,
+                            I was delighted to work with MR Fitri Khalid who knew how to be good advice, and listened to
+                            me for the creation of my site. He is a serious and available person, whom I highly
+                            recommend.
                         </p>
                     </div>
                 </div>
@@ -94,8 +93,10 @@
                         </div>
 
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s,
+
+                            We have been working regularly with the ONESTCOM agency for several years on all of our
+                            websites. We are particularly satisfied with their responsiveness and their availability. Mr
+                            Khalid supports us on all stages of our projects with great professionalism ...
                         </p>
                     </div>
                 </div>
@@ -108,7 +109,7 @@
             built with default Bootstrap components and utilities with little customization.</p>
     </div>
     <div class="pricingdiv">
-        
+
         <ul class="theplan">
             <li class="title"><b>Plan 1</b></li>
             <li><b>Dimensions:</b> 24.8W x 47.3H</li>
@@ -193,16 +194,15 @@
         </div>
     </footer>
 
-    
+
     <!------------------------------ajouter ce script svp---------------------->
     <script>
         $(document).ready(function () {
             $("button").click(function () {
-                 $(".news__box").hide(), $(".valid").show()
+                $(".news__box").hide(), $(".valid").show()
 
+            });
         });
-    });
-
     </script>
 
 

@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/footer2.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <title>footer page</title>
+    <title>Contact Us</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/55c42bd16e.js" crossorigin="anonymous"></script>
-    
+    <style>
+    .error{
+        outline: 1px solid #f00;
+      }
+    </style>
 </head>
 
 
@@ -25,7 +29,7 @@
             <i class="fas fa-ellipsis-h"></i>
         </label>
         <ul class="menu">
-            <a href="Home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="achievement.html">About</a>
             <a href="FPricing.html">Pricing</a>
             <a href="service.html">Service</a>
@@ -46,7 +50,7 @@
     <section class="mainfooter">
         <div class="description">
             <h1> Contact Us</h1>
-            <p><span>Mediaspace</span> takes a systematic approach to development. First, we need to know what you want
+            <p class="para"><span>Mediaspace</span> takes a systematic approach to development. First, we need to know what you want
                 to achieve. Through consultation, we will discuss how you want to develop your project, and how this
                 aligns with your organization’s strategy. From this discussion, we will then design a program based
                 around your needs.<br><br>
@@ -127,8 +131,19 @@
 
     <script>
         $(document).ready(function () {
+            $('.form').blur(function(){
+                if(!$(this).val()){
+                    $(this).addClass("error");
+                } 
+                else{
+                    $(this).removeClass("error")
+                }
+            
             $(".form__input--submit").click(function () {
                 $(".form__input").hide(), $(".form__alert").show()
+            
+            });
+            
             });
 
         });
