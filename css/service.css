@@ -162,6 +162,9 @@ body .system .item12 {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+  body .system .compte .para h2, body .system .compte .item1 h2, body .system .compte .item4 h2, body .system .compte .item6 h2, body .system .compte .item8 h2, body .system .compte .item10 h2, body .system .compte .item12 h2 {
+    font-size: 13px;
+  }
   body .system .compte .item1 {
     grid-column: 1/2;
     grid-row: 1/2;
