@@ -3,43 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>service</title>
+    <title>Servie page</title>
     <link rel="stylesheet" href="./css/service.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/footer2.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
+    <script src="https://kit.fontawesome.com/55c42bd16e.js" crossorigin="anonymous"></script>
 
+   
    
 </head>
 <body>
+    <div class="header">
+        <h2 class="logo">MediaSpace</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+        <ul class="menu">
+            <a href="Home.html">Home</a>
+            <a href="achievement.html">About</a>
+            <a href="FPricing.html">Pricing</a>
+            <a href="service.html">Service</a>
+            <a href="team.html">Team</a>
+            <a href="footer.html">Contact us</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
 
-    <header>
-        <div class="allMenuSlide">
-            <nav>
-              <input type="checkbox" id="check">
-              <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-              </label>
-              <img src="./img/mediaspace.png" class="logo">
-        
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a class="active" href="#">Service</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </nav>
-        
+        </ul>
+    </div>
        
     </header>
     
 
     <section>
       <div class="system">
-            <h1 class="system__titre"> <span class="system__titre--modif">our</span> <span class="system__titre--modif2"> services</span></h1>
+            <h1 class="system__titre"> <span class="system__titre--modif">our</span>  <span class="system__titre--modif2"> services</span></h1>
           <div class="compte"> 
 
             <div class="item1">
@@ -110,34 +109,46 @@
             <div class="contact-info">
                 <div class="info">
                     <h3>MEDIASPACE</h3>
-                    <p>We are a team of online marketing professionals. We understand the ecosystem of search engines. Our unique approach to SEO allows us to take your site to the top of the main search engines.</p>
-                    <div class="contact">       
-                    <h3><img class="contact__address" src="./img/location icon blanc.png" alt="location icon"> Address</h3>
-                    <p>Résidence ISIS 3eme étage Appartement 22، Rue du Capitaine Arrigui, Marrakesh 40100</p>
-                    <h3><img class="contact__phone" src="./img/phone icon blanc.png" alt="phone icon"> Phone</h3>
-                    <p>(+212) 5 24 446 213</p>
-                    </div> 
-                </div> 
+                    <p>We are a team of online marketing professionals. We understand the ecosystem of search engines. Our
+                        unique approach to SEO allows us to take your site to the top of the main search engines.</p>
+                    <div class="contact">
+                        <h3><img class="contact__address" src="./img/location icon blanc.png" alt="location icon"> Address
+                        </h3>
+                        <p>Résidence ISIS 3eme étage Appartement 22، Rue du Capitaine Arrigui, Marrakesh 40100</p>
+                        <h3><img class="contact__phone" src="./img/phone icon blanc.png" alt="phone icon"> Phone</h3>
+                        <p>(+212) 5 24 446 213</p>
+                    </div>
+                </div>
                 <div class="news">
                     <h3>NEWSLETTER</h3>
+                    <!------------------------ajouter cette ligne------------------------------->
+                    <img class="valid" src="./img/iconfinder_Like_322295.png" alt="valid icon">
+                    <!------------------------------------- ligne------------------------------->
                     <div class="news__box">
-                    <p>Join our mailing list to receive all the news and announcements.</p>
-                    <input type="email" name="email" required>
-                    <button type="submit">SUSCRIBE</button>
+                        <p>Join our mailing list to receive all the news and announcements.</p>
+                        <input type="email" name="email" required>
+                        <button type="submit">SUBSCRIBE</button>
                     </div>
-        
-                </div> 
-            </div> 
+                </div>
+            </div>
             <div class="media">
-                        <a href="#"><img class="media__icon" src="./img/iconfinder_facebook_circle_gray_107140.svg" alt="facebook"></a>
-                        <a href="#"><img class="media__icon"src="./img/iconfinder_twitter_circle_gray_107135.svg" alt="twitter"></a>
-                        <a href="#"><img class="media__icon"src="./img/iconfinder_youtube_circle_gray_107133.svg" alt="youtube"></a>
-                        <a href="#"><img class="media__icon"src="./img/iconfinder_google_circle_gray_107151.svg" alt="google"></a>
-                        <p>Copyright 2020 All rights reserved by MediaSpace</p>
+                <a href="#"><img class="media__icon" src="./img/iconfinder_facebook_circle_gray_107140.svg"
+                        alt="facebook"></a>
+                <a href="#"><img class="media__icon" src="./img/iconfinder_twitter_circle_gray_107135.svg"
+                        alt="twitter"></a>
+                <a href="#"><img class="media__icon" src="./img/iconfinder_youtube_circle_gray_107133.svg"
+                        alt="youtube"></a>
+                <a href="#"><img class="media__icon" src="./img/iconfinder_google_circle_gray_107151.svg" alt="google"></a>
+                <p>Copyright 2020 All rights reserved by MediaSpace</p>
             </div>
               
         
-            </footer>       
+            </footer> 
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="service.js"></script>
+
+                
+          
     
     
 </body>
