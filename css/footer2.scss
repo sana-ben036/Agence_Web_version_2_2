@@ -23,7 +23,13 @@ body {
         margin: 0 10%;
         h3 {
             margin: 5px;
-            font-size: small
+            font-size: small;
+            border-bottom: 1px solid #f4f4f4;
+        }
+        .valid{
+            display: none;
+            margin: 10px auto;
+            padding: 5%;
         }
         .news__box{
             display: flex;
@@ -38,6 +44,7 @@ body {
                 @extend button;
                 border: 1px solid #f4f4f4;
                 background-color: #3a3535;
+                color: #f4f4f4;
                 
             }
             button{
@@ -46,6 +53,7 @@ body {
                 margin: 2%;
                
             }
+            
           
           
         }
@@ -64,7 +72,8 @@ body {
 
         h3 {
             margin: 5px;
-            font-size: small
+            font-size: small;
+            border-bottom: 1px solid #f4f4f4;
         }
         p{
             font-size: small;
@@ -103,6 +112,8 @@ body {
     }
 
 }
+
+
 @media screen and (max-width: 1000px){
     .contact-info {
         display: grid;
@@ -117,7 +128,7 @@ body {
 
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 480px){
     .contact-info {
         font-size: 1em;
     }
