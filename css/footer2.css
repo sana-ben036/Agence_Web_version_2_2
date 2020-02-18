@@ -145,7 +145,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
   .contact-info {
     font-size: 1em;
   }
