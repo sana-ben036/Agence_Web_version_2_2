@@ -15,39 +15,30 @@ body {
 
 .presentation {
   text-align: center;
-  padding: 5%  10%;
+  padding: 2%  10% 7% 10%;
   font-size: x-large;
   background: #f4f4f4;
 }
 
 .presentation h1 {
   margin-bottom: 5%;
-  color: #FF7315;
+  color: #434343;
 }
 
 .pricingdiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   width: 100%;
   background-color: #f4f4f4;
+  padding-bottom: 10%;
 }
 
 .pricingdiv ul.theplan {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   color: white;
@@ -58,7 +49,6 @@ body {
   margin-right: 10px;
   /* spacing between tables */
   margin-bottom: 1em;
-  -webkit-transition: all .5s;
   transition: all .5s;
   margin-left: 5%;
   margin-right: 5%;
@@ -74,13 +64,10 @@ body {
 
 .pricingdiv ul.theplan:hover {
   /* when mouse hover over pricing table */
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all .5s;
+  transform: scale(1.05);
   transition: all .5s;
   z-index: 1;
-  -webkit-box-shadow: 0 0 10px gray;
-          box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px gray;
 }
 
 .pricingdiv ul.theplan li {
@@ -143,31 +130,20 @@ body {
   padding: 0 20px;
 }
 
-.border {
-  width: 160px;
-  height: 5px;
-  background: #6ab04c;
-  margin: 26px auto;
+.inner h1 {
+  margin-bottom: 5%;
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .col {
-  -webkit-box-flex: 33.33%;
-      -ms-flex: 33.33%;
-          flex: 33.33%;
+  flex: 33.33%;
   max-width: 33.33%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 15px;
 }
 
@@ -189,25 +165,20 @@ body {
 }
 
 .stars {
-  color: #6ab04c;
+  color: #FF7315;
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 960px) {
   .col {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
+    flex: 100%;
     max-width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .col {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
+    flex: 100%;
     max-width: 100%;
   }
 }
-/*# sourceMappingURL=FPricing.css.map */

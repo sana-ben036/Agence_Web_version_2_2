@@ -16,14 +16,14 @@
 .presentation{
  
     text-align: center;
-    padding: 5%  10%;
+    padding: 2%  10% 7% 10%;
     font-size: x-large;
     background: #f4f4f4;
     
   }
   .presentation h1{
     margin-bottom:5% ;
-    color: #FF7315;
+    color: #434343;
   }
   
   
@@ -34,6 +34,7 @@
     font-family: 'Source Sans Pro', Arial, sans-serif;
     width: 100%;
     background-color:#f4f4f4 ;
+    padding-bottom: 10%;
   }
   
   .pricingdiv ul.theplan {
@@ -132,14 +133,11 @@
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
+    h1{
+      margin-bottom: 5%;
+    }
   }
-  
-  .border{
-    width: 160px;
-    height: 5px;
-    background: #6ab04c;
-    margin: 26px auto;
-  }
+ 
   
   .row{
     display: flex;
@@ -169,7 +167,7 @@
     margin: 20px 0;
   }
   .stars{
-    color: #6ab04c;
+    color: #FF7315;
     margin-bottom: 20px;
   }
   
