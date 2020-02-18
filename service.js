@@ -1,23 +1,21 @@
 
-
 ScrollReveal().reveal('.item1', {
     delay: 375,
-    duration: 450,
+    duration: 100,
     reset: true
 });
 
 
-
 ScrollReveal().reveal('.item4', {
     delay: 375,
-    duration: 450,
+    duration: 100,
     reset: true
 });
 
 
 ScrollReveal().reveal('.item6', {
     delay: 375,
-    duration: 450,
+    duration:100,
     reset: true
 });
 
@@ -25,14 +23,14 @@ ScrollReveal().reveal('.item6', {
 
 ScrollReveal().reveal('.item8', {
     delay: 375,
-    duration: 450,
+    duration: 100,
     reset: true
 });
 
 
 ScrollReveal().reveal('.item10', {
     delay: 375,
-    duration: 450,
+    duration: 100,
     reset: true
 });
 
@@ -41,6 +39,6 @@ ScrollReveal().reveal('.item10', {
 
 ScrollReveal().reveal('.item12', {
     delay: 375,
-    duration: 500,
+    duration: 100,
     reset: true
 });
