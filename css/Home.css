@@ -1,13 +1,18 @@
 .allMenuSlide {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr;
-  grid-template-areas: "w3-content textbtn";
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "w3-content textbtn";
   width: 100%;
   margin: 0 auto;
 }
 
 .w3-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: w3-content;
   width: 60%;
 }
@@ -20,12 +25,17 @@
 }
 
 .textbtn {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: textbtn;
   width: 40%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 60% 40%;
-  grid-template-areas: "textbtn__para" "textbtn__subscribe";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60% 40%;
+      grid-template-rows: 60% 40%;
+      grid-template-areas: "textbtn__para" "textbtn__subscribe";
 }
 
 .textbtn__para {
@@ -38,8 +48,12 @@
   margin-bottom: 25%;
   border-radius: 10px;
   text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: textbtn__para;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .textbtn__subscribe {
@@ -50,8 +64,11 @@
   width: 30%;
   height: 18%;
   padding: 1%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: textbtn__subscribe;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .textbtn__subscribe:hover {
@@ -67,25 +84,37 @@
     height: 300px;
   }
   .textbtn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
     grid-area: textbtn;
     width: 40%;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60% 40%;
-    grid-template-areas: "textbtn__para" "textbtn__subscribe";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 60% 40%;
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "textbtn__para" "textbtn__subscribe";
   }
   .textbtn__para {
     height: auto;
     width: 31vw;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: textbtn__para;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .textbtn__subscribe {
     width: 30%;
     height: 18%;
     padding: 1%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: textbtn__subscribe;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
@@ -95,17 +124,24 @@
     width: 100%;
   }
   .allMenuSlide {
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "w3-content" "textbtn";
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "w3-content" "textbtn";
     width: 100%;
   }
   .w3-content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: w3-content;
     width: auto;
   }
   .textbtn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: textbtn;
     width: auto;
   }
@@ -144,38 +180,52 @@ H1 {
 
 /******************************************************/
 .TechnoCard {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 33% 34% 33%;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "TechnoCard__bootstrap TechnoCard__centerpic TechnoCard__php" "TechnoCard__js TechnoCard__centerpic TechnoCard__adobe" "TechnoCard__htmlcss TechnoCard__centerpic TechnoCard__wordpress";
+  -ms-grid-columns: 33% 34% 33%;
+      grid-template-columns: 33% 34% 33%;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "TechnoCard__bootstrap TechnoCard__centerpic TechnoCard__php" "TechnoCard__js TechnoCard__centerpic TechnoCard__adobe" "TechnoCard__htmlcss TechnoCard__centerpic TechnoCard__wordpress";
 }
 
 @media screen and (max-width: 480px) {
   .TechnoCard {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, "3O%");
-    grid-template-areas: "TechnoCard__bootstrap" "TechnoCard__js" "TechnoCard__htmlcss" "TechnoCard__centerpic" "TechnoCard__php" "TechnoCard__adobe" "TechnoCard__wordpress";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: ("3O%")[7];
+        grid-template-rows: repeat(7, "3O%");
+        grid-template-areas: "TechnoCard__bootstrap" "TechnoCard__js" "TechnoCard__htmlcss" "TechnoCard__centerpic" "TechnoCard__php" "TechnoCard__adobe" "TechnoCard__wordpress";
   }
 }
 
 .TechnoCard__bootstrap {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: TechnoCard__bootstrap;
   height: auto;
+  display: -ms-grid;
   display: grid;
   margin-bottom: 12%;
   padding: 9%;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "h4 img" "p img";
   border-radius: 3px;
   background-color: #fff;
+  -webkit-transition: width 2s;
   transition: width 2s;
-  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .TechnoCard__bootstrap:hover {
-  box-shadow: 4px 5px 40px #b5b5b5;
+  -webkit-box-shadow: 4px 5px 40px #b5b5b5;
+          box-shadow: 4px 5px 40px #b5b5b5;
 }
 
 .TechnoCard__bootstrap:hover h4 {
@@ -183,6 +233,8 @@ H1 {
 }
 
 .TechnoCard__bootstrap p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: p;
   font-size: 1em;
   margin-top: 10%;
@@ -190,6 +242,8 @@ H1 {
 
 .TechnoCard__bootstrap h4 {
   font-size: 1,5em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: h4;
   color: #222;
 }
@@ -201,32 +255,49 @@ H1 {
 }
 
 .TechnoCard__bootstrap img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: img;
   width: 70%;
   margin-left: 25%;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 @media screen and (max-width: 1000px) {
   .TechnoCard__bootstrap p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p;
     font-size: 14px;
     margin-top: 7%;
   }
   .TechnoCard__bootstrap h4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h4;
   }
   .TechnoCard__bootstrap img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: img;
     width: 100%;
     margin-left: 10%;
-    align-self: start;
+    -ms-flex-item-align: start;
+        align-self: start;
   }
 }
 
 .TechnoCard__centerpic {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
   grid-area: TechnoCard__centerpic;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .TechnoCard__centerpic img {
@@ -234,22 +305,30 @@ H1 {
 }
 
 .TechnoCard__php {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: TechnoCard__php;
   height: auto;
+  display: -ms-grid;
   display: grid;
   margin-bottom: 12%;
   padding: 9%;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "h4 img" "p img";
   border-radius: 3px;
   background-color: #fff;
+  -webkit-transition: width 2s;
   transition: width 2s;
-  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .TechnoCard__php:hover {
-  box-shadow: 4px 5px 40px #b5b5b5;
+  -webkit-box-shadow: 4px 5px 40px #b5b5b5;
+          box-shadow: 4px 5px 40px #b5b5b5;
 }
 
 .TechnoCard__php:hover h4 {
@@ -257,6 +336,8 @@ H1 {
 }
 
 .TechnoCard__php p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: p;
   font-size: 1em;
   margin-top: 10%;
@@ -264,6 +345,8 @@ H1 {
 
 .TechnoCard__php h4 {
   font-size: 1,5em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: h4;
   color: #222;
 }
@@ -275,46 +358,66 @@ H1 {
 }
 
 .TechnoCard__php img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: img;
   width: 70%;
   margin-left: 25%;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 @media screen and (max-width: 1000px) {
   .TechnoCard__php p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p;
     font-size: 14px;
     margin-top: 7%;
   }
   .TechnoCard__php h4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h4;
   }
   .TechnoCard__php img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: img;
     width: 100%;
     margin-left: 10%;
-    align-self: start;
+    -ms-flex-item-align: start;
+        align-self: start;
   }
 }
 
 .TechnoCard__js {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: TechnoCard__js;
   height: auto;
+  display: -ms-grid;
   display: grid;
   margin-bottom: 12%;
   padding: 9%;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "h4 img" "p img";
   border-radius: 3px;
   background-color: #fff;
+  -webkit-transition: width 2s;
   transition: width 2s;
-  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .TechnoCard__js:hover {
-  box-shadow: 4px 5px 40px #b5b5b5;
+  -webkit-box-shadow: 4px 5px 40px #b5b5b5;
+          box-shadow: 4px 5px 40px #b5b5b5;
 }
 
 .TechnoCard__js:hover h4 {
@@ -322,6 +425,8 @@ H1 {
 }
 
 .TechnoCard__js p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: p;
   font-size: 1em;
   margin-top: 10%;
@@ -329,6 +434,8 @@ H1 {
 
 .TechnoCard__js h4 {
   font-size: 1,5em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: h4;
   color: #222;
 }
@@ -340,46 +447,66 @@ H1 {
 }
 
 .TechnoCard__js img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: img;
   width: 70%;
   margin-left: 25%;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 @media screen and (max-width: 1000px) {
   .TechnoCard__js p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p;
     font-size: 14px;
     margin-top: 7%;
   }
   .TechnoCard__js h4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h4;
   }
   .TechnoCard__js img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: img;
     width: 100%;
     margin-left: 10%;
-    align-self: start;
+    -ms-flex-item-align: start;
+        align-self: start;
   }
 }
 
 .TechnoCard__adobe {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: TechnoCard__adobe;
   height: auto;
+  display: -ms-grid;
   display: grid;
   margin-bottom: 12%;
   padding: 9%;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "h4 img" "p img";
   border-radius: 3px;
   background-color: #fff;
+  -webkit-transition: width 2s;
   transition: width 2s;
-  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .TechnoCard__adobe:hover {
-  box-shadow: 4px 5px 40px #b5b5b5;
+  -webkit-box-shadow: 4px 5px 40px #b5b5b5;
+          box-shadow: 4px 5px 40px #b5b5b5;
 }
 
 .TechnoCard__adobe:hover h4 {
@@ -387,6 +514,8 @@ H1 {
 }
 
 .TechnoCard__adobe p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: p;
   font-size: 1em;
   margin-top: 10%;
@@ -394,6 +523,8 @@ H1 {
 
 .TechnoCard__adobe h4 {
   font-size: 1,5em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: h4;
   color: #222;
 }
@@ -405,46 +536,66 @@ H1 {
 }
 
 .TechnoCard__adobe img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: img;
   width: 70%;
   margin-left: 25%;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 @media screen and (max-width: 1000px) {
   .TechnoCard__adobe p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p;
     font-size: 14px;
     margin-top: 7%;
   }
   .TechnoCard__adobe h4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h4;
   }
   .TechnoCard__adobe img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: img;
     width: 100%;
     margin-left: 10%;
-    align-self: start;
+    -ms-flex-item-align: start;
+        align-self: start;
   }
 }
 
 .TechnoCard__htmlcss {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: TechnoCard__htmlcss;
   height: auto;
+  display: -ms-grid;
   display: grid;
   margin-bottom: 12%;
   padding: 9%;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "h4 img" "p img";
   border-radius: 3px;
   background-color: #fff;
+  -webkit-transition: width 2s;
   transition: width 2s;
-  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .TechnoCard__htmlcss:hover {
-  box-shadow: 4px 5px 40px #b5b5b5;
+  -webkit-box-shadow: 4px 5px 40px #b5b5b5;
+          box-shadow: 4px 5px 40px #b5b5b5;
 }
 
 .TechnoCard__htmlcss:hover h4 {
@@ -452,6 +603,8 @@ H1 {
 }
 
 .TechnoCard__htmlcss p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: p;
   font-size: 1em;
   margin-top: 10%;
@@ -459,6 +612,8 @@ H1 {
 
 .TechnoCard__htmlcss h4 {
   font-size: 1,5em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: h4;
   color: #222;
 }
@@ -470,46 +625,66 @@ H1 {
 }
 
 .TechnoCard__htmlcss img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: img;
   width: 70%;
   margin-left: 25%;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 @media screen and (max-width: 1000px) {
   .TechnoCard__htmlcss p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p;
     font-size: 14px;
     margin-top: 7%;
   }
   .TechnoCard__htmlcss h4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h4;
   }
   .TechnoCard__htmlcss img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: img;
     width: 100%;
     margin-left: 10%;
-    align-self: start;
+    -ms-flex-item-align: start;
+        align-self: start;
   }
 }
 
 .TechnoCard__wordpress {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: TechnoCard__wordpress;
   height: auto;
+  display: -ms-grid;
   display: grid;
   margin-bottom: 12%;
   padding: 9%;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "h4 img" "p img";
   border-radius: 3px;
   background-color: #fff;
+  -webkit-transition: width 2s;
   transition: width 2s;
-  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .TechnoCard__wordpress:hover {
-  box-shadow: 4px 5px 40px #b5b5b5;
+  -webkit-box-shadow: 4px 5px 40px #b5b5b5;
+          box-shadow: 4px 5px 40px #b5b5b5;
 }
 
 .TechnoCard__wordpress:hover h4 {
@@ -517,6 +692,8 @@ H1 {
 }
 
 .TechnoCard__wordpress p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: p;
   font-size: 1em;
   margin-top: 10%;
@@ -524,6 +701,8 @@ H1 {
 
 .TechnoCard__wordpress h4 {
   font-size: 1,5em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: h4;
   color: #222;
 }
@@ -535,25 +714,40 @@ H1 {
 }
 
 .TechnoCard__wordpress img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: img;
   width: 70%;
   margin-left: 25%;
-  align-self: start;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 @media screen and (max-width: 1000px) {
   .TechnoCard__wordpress p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p;
     font-size: 14px;
     margin-top: 7%;
   }
   .TechnoCard__wordpress h4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h4;
   }
   .TechnoCard__wordpress img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: img;
     width: 100%;
     margin-left: 10%;
-    align-self: start;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
 }
+/*# sourceMappingURL=Home.css.map */
