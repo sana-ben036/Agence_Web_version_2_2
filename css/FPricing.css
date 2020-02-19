@@ -15,7 +15,7 @@ body {
 
 .presentation {
   text-align: center;
-  padding: 2%  10% 7% 10%;
+  padding: 2% 10% 7% 10%;
   font-size: x-large;
   background: #f4f4f4;
 }
@@ -45,9 +45,9 @@ body {
   background: #63c7bf;
   position: relative;
   width: 250px;
-  /* width of each table */
+  /* largeur de chaque table */
   margin-right: 10px;
-  /* spacing between tables */
+  /* espacement entre les tables*/
   margin-bottom: 1em;
   transition: all .5s;
   margin-left: 5%;
@@ -93,15 +93,14 @@ body {
 }
 
 .pricingdiv ul.theplan:last-of-type {
-  /* remove right margin in very last table */
+  /* supprimer la marge droite dans le dernier tableau */
   margin-right: 0;
 }
 
-/*very last LI within each pricing UL */
 .pricingdiv ul.theplan li:last-of-type {
   text-align: center;
   margin-top: auto;
-  /*align last LI (price botton li) to the very bottom of UL */
+  /* aligner le dernier LI (prix botton li) tout en bas de UL */
 }
 
 .pricingdiv a.pricebutton {
@@ -126,7 +125,6 @@ body {
 .inner {
   max-width: 1200px;
   margin: auto;
-  overflow: hidden;
   padding: 0 20px;
 }
 
@@ -142,7 +140,6 @@ body {
 
 .col {
   flex: 33.33%;
-  max-width: 33.33%;
   box-sizing: border-box;
   padding: 15px;
 }
