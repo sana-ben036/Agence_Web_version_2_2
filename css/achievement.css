@@ -61,10 +61,6 @@ body {
   padding-bottom: 1%;
 }
 
-.txt1 h1,
-.txt2 h1 {
-  color: red;
-}
 
 .achievement {
   width: 100%;
@@ -81,9 +77,6 @@ body {
     "sec__img4 sec__img5 sec__img6";
 }
 
-span {
-  color: red;
-}
 
 .our__title3 {
   -ms-grid-row: 1;
