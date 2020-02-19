@@ -8,7 +8,7 @@
 
 @mixin qr($size) {
   @media (max-width: #{$size}) {
-    content;
+    @content;
   }
 }
 
