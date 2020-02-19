@@ -12,17 +12,17 @@ body {
 }
 
 .mainfooter{
-    border: dashed 4px #3a3535;
+    /*border: dashed 4px #3a3535;*/
     background-color: #f4f4f4;
-    color: #232020;
-}
+    color: #232020;   
+    }
 
 .description{
     padding: 0 5%;
     text-align: justify;
     h1{
         text-align: center;
-        color: #ff7323;
+        color: #232020;
         padding: 5%;
     }
     span{
@@ -92,12 +92,11 @@ body {
 }
 .contact{
     margin-top: 3%;
-    .contact__time {
+    .contact__time, .contact__mail {
         width: 30px;
+        margin-bottom: -8px;
     }
-    .contact__mail{
-        width: 20px;
-    }
+   
 
     h3,
     p {
@@ -113,8 +112,9 @@ body {
 
 
 @media screen and (max-width: 1000px){
-
-    
+    .mainfooter{
+        font-size: 1em;
+    }
 
     .map-form{
         display: grid;
@@ -135,7 +135,7 @@ body {
 }
 @media screen and (max-width: 480px){
     .mainfooter{
-        font-size: 1em;
+        font-size: .8em;
     }
 
 

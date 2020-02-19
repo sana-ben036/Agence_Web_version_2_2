@@ -13,7 +13,7 @@ body {
 }
 
 .mainfooter {
-  border: dashed 4px #3a3535;
+  /*border: dashed 4px #3a3535;*/
   background-color: #f4f4f4;
   color: #232020;
 }
@@ -25,7 +25,7 @@ body {
 
 .description h1 {
   text-align: center;
-  color: #ff7323;
+  color: #232020;
   padding: 5%;
 }
 
@@ -111,12 +111,9 @@ body {
   margin-top: 3%;
 }
 
-.contact .contact__time {
+.contact .contact__time, .contact .contact__mail {
   width: 30px;
-}
-
-.contact .contact__mail {
-  width: 20px;
+  margin-bottom: -8px;
 }
 
 .contact h3,
@@ -127,6 +124,9 @@ body {
 /*----------------------------------------le code de  footer--------------------------------------------------------*/
 /*----------------------------------------le code fin de  footer--------------------------------------------------------*/
 @media screen and (max-width: 1000px) {
+  .mainfooter {
+    font-size: 1em;
+  }
   .map-form {
     display: -ms-grid;
     display: grid;
@@ -152,7 +152,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .mainfooter {
-    font-size: 1em;
+    font-size: .8em;
   }
 }
 /*# sourceMappingURL=footer.css.map */

@@ -12,6 +12,7 @@ body {
     margin: 0 auto;
     font-family: 'PT Serif', serif;
         .system {
+            padding-bottom: 10px;
             background-color: $mywhile;
             width: 100%;
             height: auto;
@@ -21,7 +22,7 @@ body {
                     padding-top: 50px;
                     font-weight: bold;
                      .system__titre--modif{
-                         color: $myorange;
+                        
                          font-size: 26px;
                          display:inline-block;  
                          font-style: italic;
@@ -29,6 +30,7 @@ body {
                      }
                      .system__titre--modif2{
                          font-size: 36px;
+                         font-weight: bold;
                      }
                 }
             .compte{
@@ -221,10 +223,15 @@ body {
                         height:2600px;
                         .system__titre {
                             text-align: center;
+                               
                         }
                        .compte {
-                           .appl {
+                           .para{
+                               h2 {
+                                   font-size: 13px;
+                               }
                            }
+                          
                            display: grid;
                            grid-template-columns: 100%;
                            grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

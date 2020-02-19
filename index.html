@@ -1,43 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WorkFlow Agence-Web</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Home MediaSpace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/Home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  <link rel="stylesheet" href="./css/footer2.css">
+  <script src="https://kit.fontawesome.com/55c42bd16e.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <!-----------------------------***début de la partie header par "khadija"***---------------------------->
-    <header>
-    </header>
-    <!-----------------------------------///fin de la partie header///------------------------------------>
-    <!---------------------------***début de la deuxième partie par "saaf"***---------------------------->
-    <section>
+  <!--*****************************************party header***************************************************-->
 
-    </section>
-    <!----------------------------------///fin de la deuxième partie///----------------------------------->
-    <!------------------------------***début de la 3ème parties par "Najjar"***---------------------------->
-    <section>
-        
-    </section>
-    <!-----------------------------------///fin de la 3ème parties///------------------------------------->
-    <!-----------------------------***début de la 4ème parties par "Ilyass"***---------------------------->
-    <section>
-        
-    </section>
-    <!------------------------------------///fin de la 4ème parties///------------------------------------>
-    <!---------------------------***début de la 5ème partie par "SAMIR"***------------------------------>
-    <section>
-        
-    </section>
-    <!------------------------------------///fin de la 5ème parties///------------------------------------>
-    <!-----------------------***début de la dernière parties par "SANAE"***---------------------->
-    <footer>
-    </footer>
-    <!------------------------------------------///fin de partie///--------------------------------------->
+  <header>
+    <div class="header">
+      <h2 class="logo">MediaSpace</h2>
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-ellipsis-h"></i>
+      </label>
+      <ul class="menu">
+        <a href="index.html">Home</a>
+        <a href="achievement.html">About</a>
+        <a href="FPricing.html">Pricing</a>
+        <a href="service.html">Service</a>
+        <a href="team.html">Team</a>
+        <a href="footer.html">Contact us</a>
+        <label for="chk" class="hide-menu-btn">
+          <i class="fas fa-times"></i>
+        </label>
+
+      </ul>
+    </div>
+  </header>
+
+  <section>
+    <div class="allMenuSlide">
+      <div class="w3-content w3-section">
+        <img class="mySlides" src="img/banner_image1.png">
+        <img class="mySlides" src="img/illus-webdesign-2-768x603.png">
+        <img class="mySlides" src="img/uiux_graphic.png">
+        <img class="mySlides" src="img/hero-1.png">
+      </div>
+      <div class="textbtn">
+        <p class="textbtn__para">We will call you back within 24 hours Digitalization in hand</p>
+        <button class="textbtn__subscribe">Subscribe</button>
+      </div>
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </section>
+  <!------------------------------------fin header---------------------------------------->
+
+  <!-----------------------------------party our technology-------------------------------->
+  <section>
+    <h1>Our Technologies</h1>
+    <!-----------------------------------card wordpress----------------------------------------------------->
+
+    <div class="TechnoCard">
+      <!-----------------------------------card bootstrap----------------------------------------------------->
+
+      <div class="TechnoCard__bootstrap">
+        <h4>Bootstrap</h4>
+        <p>A collection of tools useful for creating website and web application design.</p>
+        <img src="img/icons8-bootstrap.png" alt="icon_bootstrap">
+      </div>
+      <!-----------------------------------card js----------------------------------------------------->
+
+      <div class="TechnoCard__js">
+        <h4>Js & Librairies</h4>
+        <p>A scripting language mainly used in interactive web pages.</p>
+        <img src="img/icons8-javascript.png" alt="icon_bootstrap">
+      </div>
+      <!-----------------------------------card htmlcss----------------------------------------------------->
+
+      <div class="TechnoCard__htmlcss">
+        <h4>HTML5, CSS3</h4>
+        <p>The markup language designed to represent web pages.</p>
+        <img src="img/icons8-source-code.png" alt="icon_bootstrap">
+      </div>
+      <!-----------------------------------card pic----------------------------------------------------->
+
+      <div class="TechnoCard__centerpic"><img src="img/intro-mobile.png" alt="photo of a mobile"></div>
+
+      <!-----------------------------------card php----------------------------------------------------->
+      <div class="TechnoCard__php">
+        <h4>Php</h4>
+        <p>A free programming language, mainly used to produce dynamic pages.</p>
+        <img src="img/icons8-php.png" alt="icon_bootstrap">
+      </div>
+      <!-----------------------------------card adobe----------------------------------------------------->
+      <div class="TechnoCard__adobe">
+        <h4>Suite Adobe</h4>
+        <p>A professional graphics software suite.</p>
+        <img src="img/icons8-adobe-creative.png" alt="icon_bootstrap">
+      </div>
+      <!-----------------------------------card wordpress----------------------------------------------------->
+      <div class="TechnoCard__wordpress">
+        <h4>Wordpress</h4>
+        <p>N ° 1 for turnkey solutions.</p>
+        <img src="img/icons8-wordpress.png" alt="icon_bootstrap">
+      </div>
+    </div>
+  </section>
+  <!-----------------------------------end party our technology-------------------------------->
+  <footer>
+    <div class="contact-info">
+      <div class="info">
+        <h3>MEDIASPACE</h3>
+        <p>We are a team of online marketing professionals. We understand the ecosystem of search engines. Our
+          unique approach to SEO allows us to take your site to the top of the main search engines.</p>
+        <div class="contact">
+          <h3><img class="contact__address" src="./img/location icon blanc.png" alt="location icon"> Address
+          </h3>
+          <p>Résidence ISIS 3eme étage Appartement 22، Rue du Capitaine Arrigui, Marrakesh 40100</p>
+          <h3><img class="contact__phone" src="./img/phone icon blanc.png" alt="phone icon"> Phone</h3>
+          <p>(+212) 5 24 446 213</p>
+        </div>
+      </div>
+      <div class="news">
+        <h3>NEWSLETTER</h3>
+        <!------------------------ajouter cette ligne------------------------------->
+        <img class="valid" src="./img/iconfinder_Like_322295.png" alt="valid icon">
+        <!------------------------------------- ligne------------------------------->
+        <div class="news__box">
+          <p>Join our mailing list to receive all the news and announcements.</p>
+          <input type="email" name="email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <a href="#"><img class="media__icon" src="./img/iconfinder_facebook_circle_gray_107140.svg" alt="facebook"></a>
+      <a href="#"><img class="media__icon" src="./img/iconfinder_twitter_circle_gray_107135.svg" alt="twitter"></a>
+      <a href="#"><img class="media__icon" src="./img/iconfinder_youtube_circle_gray_107133.svg" alt="youtube"></a>
+      <a href="#"><img class="media__icon" src="./img/iconfinder_google_circle_gray_107151.svg" alt="google"></a>
+      <p>Copyright 2020 All rights reserved by MediaSpace</p>
+    </div>
+  </footer>
+
+  <!--------------------------------------voila fin de code footer------------------------------------------------------------>
+
+  <script>
+    $(document).ready(function () {
+      $(".form__input--submit").click(function () {
+        $(".form__input").hide(), $(".form__alert").show()
+      });
+
+    });
+  </script>
+
+  <!------------------------------ajouter ce script svp---------------------->
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $(".news__box").hide(), $(".valid").show()
+
+      });
+    });
+  </script>
 </body>
 
 </html>
