@@ -11,6 +11,7 @@ body {
 }
 
 body .system {
+  padding-bottom: 10px;
   background-color: #F4F4F4;
   width: 100%;
   height: auto;
@@ -127,7 +128,6 @@ body .system .item12 {
     width: 100%;
   }
   body .system {
-    padding-top: 20px;
     height: 1500px;
   }
   body .system .compte .appl, body .system .compte .para, body .system .compte .item1, body .system .compte .item4, body .system .compte .item6, body .system .compte .item8, body .system .compte .item10, body .system .compte .item12, body .system .compte .item2, body .system .compte .item3, body .system .compte .item5, body .system .compte .item7, body .system .compte .item9, body .system .compte .item11 {

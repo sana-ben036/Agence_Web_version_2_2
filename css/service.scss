@@ -12,6 +12,7 @@ body {
     margin: 0 auto;
     font-family: 'PT Serif', serif;
         .system {
+            padding-bottom: 10px;
             background-color: $mywhile;
             width: 100%;
             height: auto;
@@ -182,7 +183,6 @@ body {
             }
             body {
                 .system{
-                    padding-top: 20px;
                     height: 1500px;
                     .compte {
                         .appl {
