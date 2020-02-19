@@ -13,11 +13,34 @@ body {
 
 }
 
+@mixin alignement {
+    align-self: center;
+    justify-self: center;
+}
+
+@mixin alignpad {
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 6%;
+}
+
+@mixin align_pad-pad {
+    align-self: center;
+    justify-self: center;
+    padding: 6%;
+    padding-bottom: 6%;
+}
+
+$fontHeadColor: #fff;
+$Backg-Header:#FF7315;
+$HoverColor:#3498db;
+$Backg-menu:#333;
+
 .header {
     height: 100px;
-    background: #FF7315;
+    background: $Backg-Header;
     padding: 0 20px;
-    color: #fff;
+    color: $fontHeadColor;
 }
 
 .logo {
@@ -32,7 +55,7 @@ body {
 }
 
 .menu a {
-    color: #fff;
+    color: $fontHeadColor;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 10px;
@@ -58,7 +81,7 @@ body {
 .menu a:hover,
 .show-menu-btn:hover,
 .hide-menu-btn:hover {
-    color: #3498db;
+    color: $HoverColor;
 }
 
 #chk {
@@ -78,7 +101,7 @@ body {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #333;
+        background: $Backg-menu;
         right: -100%;
         top: 0;
         text-align: center;
@@ -114,7 +137,7 @@ body {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background: #333;
+        background: $Backg-menu;
         opacity: 0.9;
         right: -100%;
         top: 0;
@@ -198,8 +221,7 @@ body {
 
 .our__title3 {
     grid-area: our__title3;
-    align-self: center;
-    justify-self: center;
+    @include alignement();
 
     h1 {
         font-size: 2.5rem;
@@ -208,41 +230,32 @@ body {
 
 .sec__img1 {
     grid-area: sec__img1;
-    align-self: center;
-    justify-self: center;
+    @include alignement();
 }
 
 .sec__img2 {
     grid-area: sec__img2;
-    align-self: center;
-    justify-self: center;
+    @include alignement();
 }
 
 .sec__img3 {
     grid-area: sec__img3;
-    align-self: center;
-    justify-self: center;
+    @include alignement();
 }
 
 .sec__img4 {
     grid-area: sec__img4;
-    align-self: center;
-    justify-self: center;
-    padding-bottom: 6%;
+    @include alignpad();
 }
 
 .sec__img5 {
     grid-area: sec__img5;
-    align-self: center;
-    justify-self: center;
-    padding-bottom: 6%;
+    @include alignpad();
 }
 
 .sec__img6 {
     grid-area: sec__img6;
-    align-self: center;
-    justify-self: center;
-    padding-bottom: 6%;
+    @include alignpad();
 }
 
 @media (max-width: 1600px) {
@@ -271,44 +284,32 @@ body {
 
     .sec__img1 {
         grid-area: sec__img1;
-        align-self: center;
-        justify-self: center;
-        padding-bottom: 6%;
+        @include alignpad();
     }
 
     .sec__img2 {
         grid-area: sec__img2;
-        align-self: center;
-        justify-self: center;
-        padding-bottom: 6%;
+        @include alignpad();
     }
 
     .sec__img3 {
         grid-area: sec__img3;
-        align-self: center;
-        justify-self: center;
-        padding-bottom: 6%;
+        @include alignpad();
     }
 
     .sec__img4 {
         grid-area: sec__img4;
-        align-self: center;
-        justify-self: center;
-        padding-bottom: 6%;
+        @include alignpad();
     }
 
     .sec__img5 {
         grid-area: sec__img5;
-        align-self: center;
-        justify-self: center;
-        padding-bottom: 6%;
+        @include alignpad();
     }
 
     .sec__img6 {
         grid-area: sec__img6;
-        align-self: center;
-        justify-self: center;
-        padding-bottom: 6%;
+        @include alignpad();
     }
 
 }
@@ -343,50 +344,32 @@ body {
 
     .sec__img1 {
         grid-area: sec__img1;
-        align-self: center;
-        justify-self: center;
-        padding: 6%;
-        padding-bottom: 6%;
+        @include align_pad-pad();
     }
 
     .sec__img2 {
         grid-area: sec__img2;
-        align-self: center;
-        justify-self: center;
-        padding: 6%;
-        padding-bottom: 6%;
+        @include align_pad-pad();
     }
 
     .sec__img3 {
         grid-area: sec__img3;
-        align-self: center;
-        justify-self: center;
-        padding: 6%;
-        padding-bottom: 6%;
+        @include align_pad-pad();
     }
 
     .sec__img4 {
         grid-area: sec__img4;
-        align-self: center;
-        justify-self: center;
-        padding: 6%;
-        padding-bottom: 6%;
+        @include align_pad-pad();
     }
 
     .sec__img5 {
         grid-area: sec__img5;
-        align-self: center;
-        justify-self: center;
-        padding: 6%;
-        padding-bottom: 6%;
+        @include align_pad-pad();
     }
 
     .sec__img6 {
         grid-area: sec__img6;
-        align-self: center;
-        justify-self: center;
-        padding: 6%;
-        padding-bottom: 6%;
+        @include align_pad-pad();
     }
 
 }
