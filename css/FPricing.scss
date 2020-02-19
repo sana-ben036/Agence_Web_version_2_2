@@ -6,6 +6,12 @@
 
 }
 
+@mixin qr($size) {
+  @media (max-width: #{$size}) {
+    @content;
+  }
+}
+
 body {
   width: 80%;
   background-color: white;
@@ -21,12 +27,13 @@ body {
   font-size: x-large;
   background: #f4f4f4;
 
+  h1 {
+    margin-bottom: 5%;
+    color: #434343;
+  }
 }
 
-.presentation h1 {
-  margin-bottom: 5%;
-  color: #434343;
-}
+
 
 
 .pricingdiv {
@@ -56,6 +63,14 @@ body {
   transition: all .5s;
   margin-left: 5%;
   margin-right: 5%;
+
+  &:hover {
+    /* when mouse hover over pricing table */
+    transform: scale(1.05);
+    transition: all .5s;
+    z-index: 1;
+    box-shadow: 0 0 10px gray;
+  }
 
 }
 
@@ -151,6 +166,17 @@ body {
   flex: 33.33%;
   box-sizing: border-box;
   padding: 15px;
+
+  @include qr(960px) {
+    flex: 100%;
+    max-width: 80%;
+  }
+
+  @include qr(600px) {
+    flex: 100%;
+    max-width: 100%;
+
+  }
 }
 
 .testimonial {
@@ -178,16 +204,3 @@ body {
 }
 
 
-@media screen and (max-width:960px) {
-  .col {
-    flex: 100%;
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .col {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
