@@ -1,3 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'PT Serif', serif;
+  font-size: 1.2em;
+}
 .allMenuSlide {
   background-color: #F4F4F4;
   display: grid;
@@ -26,7 +39,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 60% 40%;
-  grid-template-areas: "textbtn__para" "textbtn__subscribe";
+  grid-template-areas: "textbtn__para"
+ "textbtn__subscribe";
 }
 
 .textbtn__para {
@@ -73,7 +87,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60% 40%;
-    grid-template-areas: "textbtn__para" "textbtn__subscribe";
+    grid-template-areas: "textbtn__para"
+ "textbtn__subscribe";
   }
   .textbtn__para {
     height: auto;
@@ -99,7 +114,8 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "w3-content" "textbtn";
+    grid-template-areas: "w3-content"
+ "textbtn";
     width: 100%;
   }
   .w3-content {
@@ -120,20 +136,6 @@
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  width: 80%;
-  margin: 0 auto;
-  font-family: 'PT Serif', serif;
-  font-size: 1.2em;
-}
-
 H1 {
   color: #222;
   font-size: 30px;
@@ -148,7 +150,9 @@ H1 {
   display: grid;
   grid-template-columns: 33% 34% 33%;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "TechnoCard__bootstrap TechnoCard__centerpic TechnoCard__php" "TechnoCard__js TechnoCard__centerpic TechnoCard__adobe" "TechnoCard__htmlcss TechnoCard__centerpic TechnoCard__wordpress";
+  grid-template-areas: "TechnoCard__bootstrap TechnoCard__centerpic TechnoCard__php"
+ "TechnoCard__js TechnoCard__centerpic TechnoCard__adobe"
+ "TechnoCard__htmlcss TechnoCard__centerpic TechnoCard__wordpress";
 }
 
 @media screen and (max-width: 480px) {
@@ -156,7 +160,13 @@ H1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, "3O%");
-    grid-template-areas: "TechnoCard__bootstrap" "TechnoCard__js" "TechnoCard__htmlcss" "TechnoCard__centerpic" "TechnoCard__php" "TechnoCard__adobe" "TechnoCard__wordpress";
+    grid-template-areas: "TechnoCard__bootstrap"
+ "TechnoCard__js"
+ "TechnoCard__htmlcss"
+ "TechnoCard__centerpic"
+ "TechnoCard__php"
+ "TechnoCard__adobe"
+ "TechnoCard__wordpress";
   }
 }
 
@@ -168,7 +178,8 @@ H1 {
   padding: 9%;
   grid-template-columns: 70% 30%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  grid-template-areas: "h4 img"
+ "p img";
   border-radius: 3px;
   background-color: #fff;
   transition: width 2s;
@@ -242,7 +253,8 @@ H1 {
   padding: 9%;
   grid-template-columns: 70% 30%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  grid-template-areas: "h4 img"
+ "p img";
   border-radius: 3px;
   background-color: #fff;
   transition: width 2s;
@@ -307,7 +319,8 @@ H1 {
   padding: 9%;
   grid-template-columns: 70% 30%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  grid-template-areas: "h4 img"
+ "p img";
   border-radius: 3px;
   background-color: #fff;
   transition: width 2s;
@@ -372,7 +385,8 @@ H1 {
   padding: 9%;
   grid-template-columns: 70% 30%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  grid-template-areas: "h4 img"
+ "p img";
   border-radius: 3px;
   background-color: #fff;
   transition: width 2s;
@@ -437,7 +451,8 @@ H1 {
   padding: 9%;
   grid-template-columns: 70% 30%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  grid-template-areas: "h4 img"
+ "p img";
   border-radius: 3px;
   background-color: #fff;
   transition: width 2s;
@@ -502,7 +517,8 @@ H1 {
   padding: 9%;
   grid-template-columns: 70% 30%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "h4 img" "p img";
+  grid-template-areas: "h4 img"
+ "p img";
   border-radius: 3px;
   background-color: #fff;
   transition: width 2s;
