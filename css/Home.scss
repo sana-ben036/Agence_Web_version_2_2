@@ -23,6 +23,7 @@ body {
   margin:0 auto;
 
 }
+/**---------------------------------- secton header-----------------------------------**/
 .w3-content{
   grid-area: w3-content;
   width: 60%;
@@ -56,8 +57,8 @@ margin:3%;
                         }
                         &__subscribe{
                           color:white;
-                          background-color: §MainColor;
-                          border:1px solid §MainColor;
+                          background-color: $MainColor;
+                          border:1px solid $MainColor;
                           border-radius: 10px;
                           width: 30%;
                           height: 18%;
@@ -65,7 +66,7 @@ margin:3%;
                           grid-area: textbtn__subscribe;
                           justify-self: center;
                           &:hover{
-                            color:§MainColor;
+                            color:$MainColor;
                             background-color: rgb(255, 255, 255);
                             border:1px solid rgb(255, 255, 255);
                           }
@@ -132,6 +133,8 @@ margin:3%;
                 }
                   
                   }
+/**----------------------------------end secton header-----------------------------------**/
+/**---------------------------------- our technology-----------------------------------**/
 
 @mixin cardlang {
   height: auto;
@@ -162,7 +165,7 @@ margin:3%;
     font-size:1,5em;
     grid-area: h4;
     color:#222;
-    @media screen and (max-width: §MediaTablette) {
+    @media screen and (max-width: $MediaTablette) {
       font-size:1em;
     }
   }
@@ -172,7 +175,7 @@ margin:3%;
     margin-left:25%;
     align-self: start;
   }
-  @media screen and (max-width: §MediaTablette) {
+  @media screen and (max-width: $MediaTablette) {
     p{
      grid-area: p;
      font-size: 14px;
@@ -198,7 +201,6 @@ H1{
   text-align:center;
 }
 
-/******************************************************/
 .TechnoCard{
   display: grid;
   grid-template-columns: 33% 34% 33%;
@@ -250,3 +252,4 @@ H1{
                               @include cardlang;
                               }
             }
+/**----------------------------------end secton header-----------------------------------**/
