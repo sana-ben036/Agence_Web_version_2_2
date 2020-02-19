@@ -65,6 +65,17 @@ body {
   margin-right: 5%;
 }
 
+.pricingdiv ul.theplan:hover {
+  /* when mouse hover over pricing table */
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 1;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+}
+
 .ed {
   color: black;
 }
@@ -161,10 +172,27 @@ body {
   -webkit-box-flex: 33.33%;
       -ms-flex: 33.33%;
           flex: 33.33%;
-  max-width: 33.33%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px;
+}
+
+@media (max-width: 960px) {
+  .col {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .col {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .testimonial {
@@ -187,23 +215,5 @@ body {
 .stars {
   color: #FF7315;
   margin-bottom: 20px;
-}
-
-@media screen and (max-width: 960px) {
-  .col {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .col {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
 }
 /*# sourceMappingURL=FPricing.css.map */
