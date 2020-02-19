@@ -82,7 +82,13 @@ body {
   }
 }
 
-
+.pricingdiv ul.theplan:hover {
+  /* when mouse hover over pricing table */
+  transform: scale(1.05);
+  transition: all .5s;
+  z-index: 1;
+  box-shadow: 0 0 10px gray;
+}
 
 .pricingdiv ul.theplan li {
   margin: 10px 20px;

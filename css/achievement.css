@@ -20,8 +20,9 @@ body {
 .section1 {
   width: 80%;
   margin: 0 auto;
-  margin-top: 1%;
+  margin-top: 3%;
 }
+
 
 .section1 .txt1 {
   margin: 0 auto;
@@ -56,11 +57,17 @@ body {
   text-align: justify;
 }
 
+.section1 .txt1 h1,
 .txt2 h1,
 .txt3 h1 {
+  font-size: 1.5em;
   padding-bottom: 1%;
 }
 
+.txt1 h1,
+.txt2 h1 {
+  color: red;
+}
 
 .achievement {
   width: 100%;
@@ -77,6 +84,9 @@ body {
     "sec__img4 sec__img5 sec__img6";
 }
 
+span {
+  color: red;
+}
 
 .our__title3 {
   -ms-grid-row: 1;
@@ -90,7 +100,7 @@ body {
 }
 
 .our__title3 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5em;
 }
 
 .sec__img1 {
