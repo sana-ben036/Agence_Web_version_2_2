@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -59,8 +60,8 @@ body {
 
 .textbtn__subscribe {
   color: white;
-  background-color: #FF7515;
-  border: 1px solid #FF7515;
+  background-color: §MainColor;
+  border: 1px solid §MainColor;
   border-radius: 10px;
   width: 30%;
   height: 18%;
@@ -70,12 +71,12 @@ body {
 }
 
 .textbtn__subscribe:hover {
-  color: #FF7515;
+  color: §MainColor;
   background-color: white;
   border: 1px solid white;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
   .mySlides {
     display: none;
     width: 40vw;
@@ -195,7 +196,7 @@ H1 {
   color: #222;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__bootstrap h4 {
     font-size: 1em;
   }
@@ -208,7 +209,7 @@ H1 {
   align-self: start;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__bootstrap p {
     grid-area: p;
     font-size: 14px;
@@ -269,7 +270,7 @@ H1 {
   color: #222;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__php h4 {
     font-size: 1em;
   }
@@ -282,7 +283,7 @@ H1 {
   align-self: start;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__php p {
     grid-area: p;
     font-size: 14px;
@@ -334,7 +335,7 @@ H1 {
   color: #222;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__js h4 {
     font-size: 1em;
   }
@@ -347,7 +348,7 @@ H1 {
   align-self: start;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__js p {
     grid-area: p;
     font-size: 14px;
@@ -399,7 +400,7 @@ H1 {
   color: #222;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__adobe h4 {
     font-size: 1em;
   }
@@ -412,7 +413,7 @@ H1 {
   align-self: start;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__adobe p {
     grid-area: p;
     font-size: 14px;
@@ -464,7 +465,7 @@ H1 {
   color: #222;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__htmlcss h4 {
     font-size: 1em;
   }
@@ -477,7 +478,7 @@ H1 {
   align-self: start;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__htmlcss p {
     grid-area: p;
     font-size: 14px;
@@ -529,7 +530,7 @@ H1 {
   color: #222;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__wordpress h4 {
     font-size: 1em;
   }
@@ -542,7 +543,7 @@ H1 {
   align-self: start;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: §MediaTablette) {
   .TechnoCard__wordpress p {
     grid-area: p;
     font-size: 14px;
