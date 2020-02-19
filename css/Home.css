@@ -59,8 +59,8 @@ body {
 
 .textbtn__subscribe {
   color: white;
-  background-color: #FF7515;
-  border: 1px solid #FF7515;
+  background-color: #FF7315;
+  border: 1px solid #FF7315;
   border-radius: 10px;
   width: 30%;
   height: 18%;
@@ -70,7 +70,7 @@ body {
 }
 
 .textbtn__subscribe:hover {
-  color: #FF7515;
+  color: #FF7315;
   background-color: white;
   border: 1px solid white;
 }
