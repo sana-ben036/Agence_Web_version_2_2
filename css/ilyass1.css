@@ -292,4 +292,78 @@ h6.ourteam__text {
   width: 200 px;
   height: 200px;
 }
+
+@media screen and (max-width: 1000px) {
+  .ourteam__text {
+    text-align: center;
+    font-size: 0.8em;
+  }
+  #all {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr .5fr;
+        grid-template-rows: 1fr 1fr .5fr;
+        grid-template-areas: part1  part2 part3  part4 part5;
+  }
+  #all .human1 {
+        grid-template-areas: part1;
+  }
+  #all .human2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: part2;
+  }
+  #all .human3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: part3;
+  }
+  #all .human4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: part4;
+  }
+  #all .hman5 {
+    grid-area: part5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ourteam__text {
+    font-size: 0.4em;
+    text-align: center;
+  }
+  #all {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: part1 part2 part3 part4 part5;
+  }
+  #all .human1 {
+    grid-area: part1;
+  }
+  #all .human2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: part2;
+  }
+  #all .human3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: part3;
+  }
+  #all .human4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: part4;
+  }
+  #all .hman5 {
+    grid-area: part5;
+  }
+}
 /*# sourceMappingURL=ilyass1.css.map */
