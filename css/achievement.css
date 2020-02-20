@@ -68,6 +68,54 @@ body {
   z-index: -1111;
 }
 
+.alltxt {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.txt2 {
+  width: 44%;
+  text-align: justify;
+}
+
+.txt2 h1 {
+  font-size: 1.2em;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: red;
+}
+
+.txt2 p {
+  padding-top: 2%;
+}
+
+.txt3 {
+  width: 44%;
+  text-align: justify;
+}
+
+.txt3 h1 {
+  font-size: 1.2em;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.txt3 p {
+  padding-top: 2%;
+}
+
+.txt3 span {
+  color: red;
+}
+
 @media screen and (max-width: 800px) {
   .show-menu-btn,
   .hide-menu-btn {
@@ -162,19 +210,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.txt2,
-.txt3 {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2%;
-  text-align: justify;
-}
-
-.txt2 h1,
-.txt3 h1 {
-  padding-bottom: 1%;
 }
 
 .achievement {
@@ -370,6 +405,36 @@ body {
 }
 
 @media (max-width: 970px) {
+  .txt2 {
+    width: 100%;
+    text-align: justify;
+    padding: 6%;
+  }
+  .txt2 h1 {
+    font-size: 1.2em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: red;
+  }
+  .txt2 p {
+    padding-top: 2%;
+  }
+  .txt3 {
+    width: 100%;
+    text-align: justify;
+    padding: 6%;
+  }
+  .txt3 h1 {
+    font-size: 1.2em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .txt3 p {
+    padding-top: 2%;
+  }
+  .txt3 span {
+    color: red;
+  }
   .achievement {
     width: 100%;
     margin: 0 auto;

@@ -90,6 +90,50 @@ $Backg-menu:#333;
     z-index: -1111;
 }
 
+.alltxt {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.txt2 {
+    width: 44%;
+    text-align: justify;
+
+    & h1 {
+        font-size: 1.2em;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        color: red;
+    }
+
+    & p {
+        padding-top: 2%;
+    }
+}
+
+.txt3 {
+    width: 44%;
+    text-align: justify;
+
+    & h1 {
+        font-size: 1.2em;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    & p {
+        padding-top: 2%;
+    }
+
+    & span {
+        color: red;
+    }
+}
+
 @media screen and (max-width:800px) {
 
     .show-menu-btn,
@@ -125,6 +169,8 @@ $Backg-menu:#333;
         right: 0;
     }
 }
+
+
 
 @media screen and (max-width: 1090px) {
 
@@ -195,17 +241,6 @@ $Backg-menu:#333;
 }
 
 
-.txt2,
-.txt3 {
-    width: 80%;
-    margin: 0 auto;
-    padding: 2%;
-    text-align: justify;
-
-    & h1 {
-        padding-bottom: 1%;
-    }
-}
 
 .achievement {
     width: 100%;
@@ -315,6 +350,43 @@ $Backg-menu:#333;
 }
 
 @media (max-width:970px) {
+    .txt2 {
+        width: 100%;
+        text-align: justify;
+        padding: 6%;
+
+        & h1 {
+            font-size: 1.2em;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            color: red;
+        }
+
+        & p {
+            padding-top: 2%;
+        }
+    }
+
+    .txt3 {
+        width: 100%;
+        text-align: justify;
+        padding: 6%;
+
+        & h1 {
+            font-size: 1.2em;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+
+        & p {
+            padding-top: 2%;
+        }
+
+        & span {
+            color: red;
+        }
+    }
+
     .achievement {
         width: 100%;
         margin: 0 auto;
