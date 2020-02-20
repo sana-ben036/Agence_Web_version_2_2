@@ -1,5 +1,20 @@
+$MainColor:#FF7315;
+$MediaMobile:480px;
+$MediaTablette:1000px;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'PT Serif', serif;
+  font-size: 1.2em;
+}
 .allMenuSlide{
-  background-color: #F4F4F4;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
@@ -8,6 +23,7 @@
   margin:0 auto;
 
 }
+/**---------------------------------- secton header-----------------------------------**/
 .w3-content{
   grid-area: w3-content;
   width: 60%;
@@ -41,8 +57,8 @@ margin:3%;
                         }
                         &__subscribe{
                           color:white;
-                          background-color: #FF7515;
-                          border:1px solid #FF7515;
+                          background-color: $MainColor;
+                          border:1px solid $MainColor;
                           border-radius: 10px;
                           width: 30%;
                           height: 18%;
@@ -50,13 +66,13 @@ margin:3%;
                           grid-area: textbtn__subscribe;
                           justify-self: center;
                           &:hover{
-                            color:#FF7515;
+                            color:$MainColor;
                             background-color: rgb(255, 255, 255);
                             border:1px solid rgb(255, 255, 255);
                           }
                           }
                       }
-                      @media screen and (max-width: 1000px) {
+                      @media screen and (max-width: $MediaMobile) {
                         .mySlides {
                           display:none;
                           width: 40vw;
@@ -86,7 +102,7 @@ margin:3%;
                       
                       
                       }
-                      @media screen and (max-width: 480px) {
+                      @media screen and (max-width: $MediaMobile) {
                         .mySlides {
                           height: 300px;
                           width:100%;
@@ -117,18 +133,9 @@ margin:3%;
                 }
                   
                   }
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-body {
-  width: 80%;
-  margin: 0 auto;
-  font-family: 'PT Serif', serif;
-  font-size: 1.2em;
-}
+/**----------------------------------end secton header-----------------------------------**/
+/**---------------------------------- our technology-----------------------------------**/
+
 @mixin cardlang {
   height: auto;
   display: grid;
@@ -145,7 +152,7 @@ body {
  &:hover{
   box-shadow: 4px 5px 40px #b5b5b5;
   h4{
-      color:#FF7315;
+      color:$MainColor;
 
   }
   }
@@ -158,7 +165,7 @@ body {
     font-size:1,5em;
     grid-area: h4;
     color:#222;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $MediaTablette) {
       font-size:1em;
     }
   }
@@ -168,7 +175,7 @@ body {
     margin-left:25%;
     align-self: start;
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: $MediaTablette) {
     p{
      grid-area: p;
      font-size: 14px;
@@ -194,7 +201,6 @@ H1{
   text-align:center;
 }
 
-/******************************************************/
 .TechnoCard{
   display: grid;
   grid-template-columns: 33% 34% 33%;
@@ -202,7 +208,7 @@ H1{
   grid-template-areas: "TechnoCard__bootstrap TechnoCard__centerpic TechnoCard__php"
                        "TechnoCard__js TechnoCard__centerpic TechnoCard__adobe"
                        "TechnoCard__htmlcss TechnoCard__centerpic TechnoCard__wordpress";
-                       @media screen and (max-width: 480px) {
+                       @media screen and (max-width: $MediaMobile) {
                         display: grid;
                         grid-template-columns:1fr;
                         grid-template-rows: repeat(7, "3O%");
@@ -246,3 +252,4 @@ H1{
                               @include cardlang;
                               }
             }
+/**----------------------------------end secton header-----------------------------------**/
